@@ -1,0 +1,28 @@
+package Class;
+
+class bmisam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//We know that Sam’s weight is 16.9 kg and his height is 105.4 cm. What is Sam’s BMI?
+		//(16.9 kg / 105.4 cm / 105.4 cm ) x 10,000 = 15.2
+		
+		double weight = 16.9;
+		double height = 105.4;
+		Double BMI;
+		BMI = (weight/(height*height));
+		
+		System.out.println("The Sam's weight is " + weight);
+		System.out.println("The Sam's height is "+ height);
+		System.out.println("The Sam's BMI is :" + BMI);
+		
+		
+		
+		
+
+
+
+
+	}
+
+}
