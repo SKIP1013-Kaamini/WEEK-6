@@ -1,0 +1,18 @@
+Please enter your first subject :
+MATHS
+Your subject 1 mark is :MATHS
+Please enter your first subject mark :
+89
+Your subject 1 mark is :89.0
+Please enter your second subject :
+HISTORY
+Your subject 1 mark is :HISTORY
+Please enter your second subject mark :
+80
+Your subject 1 mark is :80.0
+The first subject mark is higher than second subject
+The first subject is 'PASS'
+Your second subject is 'PASS'
+ The passed subject :MATHS HISTORY
+The average mark is 84.5
+The average grade is : Grade A
