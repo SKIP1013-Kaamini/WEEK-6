@@ -1,0 +1,80 @@
+package Class;
+import java.util.Scanner;
+class exerciseScore {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//masukkan dua subjek dan markah
+		
+		String subjectA;
+		String subjectB;
+		double subject1;
+		double subject2;
+		
+		Scanner scan = new Scanner (System.in);
+		System.out.println("Please enter your first subject :");
+		subjectA = scan.next();
+		System.out.println("Your subject 1 mark is :" + subjectA);
+		System.out.println("Please enter your first subject mark :");
+		subject1 = scan.nextDouble();
+		System.out.println("Your subject 1 mark is :" + subject1);
+		System.out.println("Please enter your second subject :");
+		subjectB = scan.next();
+		System.out.println("Your subject 1 mark is :" + subjectB);
+		System.out.println("Please enter your second subject mark :");
+		subject2 = scan.nextDouble();
+		System.out.println("Your subject 1 mark is :" + subject2);
+		
+		
+		//nyatakan subjeck mana lebih besar markah dan subjeck mana lebih kecil
+		
+		if (subject1 > subject2)
+			System.out.println("The first subject mark is higher than second subject");
+		else
+			System.out.println("The second subject mark is higher than the first subject");
+		
+		//Nyatakan subjek yang mempunyai markah lebih besar daripada 50, calon di kira lulus
+		
+		if (subject1 >50 )
+			System.out.println("The first subject is 'PASS'");
+		else
+			System.out.println("The first subject is 'FAIL'");
+		if (subject2 > 50)
+			System.out.println("Your second subject is 'PASS'");
+		else 
+			System.out.println("Your second subject is 'FAIL'");
+		
+		
+		// Nyatakan subjek mana yang lulus dan yang mana gagal
+		
+		if ((subject1 > 50) && (subject2 > 50))
+			System.out.println(" The passed subject :" + subjectA   + subjectB);
+		else if ((subject1 > 50) && (subject2 <= 50))
+			System.out.println("The passed subject :" + subjectA);
+		else if ((subject1 <=50) && (subject2 > 50))
+			System.out.println("The passed subject : " + subjectB);
+		else
+			System.out.println("Both are failed !");		
+			
+		//Kira purata markah. Markah 80-100 adalah Gred A,
+		//markah 60-79 adalah Gred B dan markah 50-59 adalah gred C.
+		//Lain2 markah adalah Gagal	
+		double avg = ((subject1 + subject2)/2);
+		System.out.println("The average mark is "+ avg);
+		 if ((avg >= 80) && (avg <= 100))
+			 System.out.println("The average grade is : Grade A");
+		 else if ((avg <= 79) && (avg >= 60 ))
+			 System.out.println("The average grade is : Grade B");
+		 else if ((avg <= 59) && (avg >= 50))
+			 System.out.println("The average grade is : Grade C");
+		 else
+			 System.out.println("The average grade is : FAIL!");
+			 
+		 
+		 
+	
+
+	}
+
+}
