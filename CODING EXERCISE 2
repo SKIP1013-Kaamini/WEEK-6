@@ -1,0 +1,36 @@
+package Class;
+import java.util.Scanner;
+class exercise2bmi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Masukkan bmi.. jika kurang dari 18.5 - underweight,
+		//jika kurang dari 25 - normal, jika kurang dari 30 - overweight dan lain-lain Obese
+		
+		double weight;
+		double height;
+		double bmi;
+		
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.println("Enter your height please:");
+		height = scan.nextDouble();
+		System.out.println("Your height is:"+ height);
+		System.out.println("Enter you weight please : ");
+		weight = scan.nextDouble();
+		System.out.println("Your weight is :" + weight);
+	
+		bmi = (weight/(height/100*height/100));
+		if (bmi <= 18.5)	
+			System.out.println("You is UNDERWEIGHT");	
+		else if ((bmi >= 18.5) && (bmi <= 24.99))
+			System.out.println("Your weight is NORMAL");
+		else if ((bmi >= 25) && (bmi <= 29.99))
+			System.out.println("You is OVERWEIGHT");
+		else 
+			 System.out.println("You is OBESE");
+	}
+		
+		
+}		
+	
