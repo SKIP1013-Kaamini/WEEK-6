@@ -1,0 +1,55 @@
+package Class;
+
+import java.util.Scanner;
+
+class Exercise6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//if Grade A then  marks >=90
+	    // if Grade B then marks >=80 and less than 90
+		//if Grade C then marks >=70 and less than 80
+		//if Grade D then marks >=60 and less than 70
+	    //if Grade E then marks >=50 and less than 60
+	     //if Grade F then marks <=40
+	     // if any other grade is passed then print invalid grade
+		
+		
+        char grade;
+	    Scanner scan = new Scanner(System.in);
+		System.out.println("Enter your grade");
+		grade = scan.next().charAt(0);
+		System.out.println("Your grade is" + grade);
+		
+		switch (grade) {
+		
+		case 'A' :
+		    System.out.println("Your grade is >=90 ");
+
+		 case 'B' :
+		    System.out.println("Your grade is >=80 and less than 90 "); 
+
+		 case 'C' :
+		    System.out.println("Your grade is >=70 and less than 80");
+		 
+		 case 'D' :
+		     System.out.println("Your grade is >=60 and less than 70 ");
+		     
+		 case 'E' :
+		     System.out.println("Your grade is >=50 and less than 60 "); 
+		     
+		 case 'F' :
+		     System.out.println("Your grade is <=40 ");    
+
+		 default:
+		   System.out.println("Invalid Number");
+		   
+		}
+		
+		
+		
+
+	}
+
+}
